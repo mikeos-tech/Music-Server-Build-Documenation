@@ -1,0 +1,78 @@
+https://ubuntu.com/download/server
+
+sudo fdisk -l
+sudo dd bs=4M if=ubuntu-21.04-live-server-amd64.iso of=/dev/sdb status=progress
+
+write it to a USB stick and boot from it.
+carry out the install, just including the standard elements though including openssh
+
+after the reboot
+
+
+If you have an ssh key that you use to login, set it up
+ssh-copy-id mike@192.168.2.9
+
+Acceses the server using ssh
+ssh mike@192.168.2.9
+
+sudo apt update && sudo apt Upgrade
+
+run the software install script
+This script has a line in it near the top that sets the time zone to Europe/London, this will need to be modified if it isn't what you require
+    sudo timedatectl set-timezone Europe/London
+To look for alternative timezones use the command below
+    timedatectl list-timezones
+    
+transmission didn't install
+
+run the user tools script
+
+I copied across my configuration files
+
+ran the create_folder.sh script
+
+copy fstab
+copy smb.conf
+
+sudo chown -R mike:mike /storage/
+sudo chmod -R g+rw /storage/
+
+rebooted
+
+run the install LMS script
+this seemed to work
+
+run the install get_iplayer script
+
+run the install webmin script
+webmin won't install
+
+
+configure LMS from the web page.
+LMS won't display until you have started the web server, so you need to do this.
+
+If you login with a Logitech Media account, you can create one if you wish.
+All the installation process does it points your server at your music and playlist location.  It is easy to do both of these from the settings.
+Having the account doesn't cause any problems, it isn't used for marketing or anything other than what the site offers, but as it is a free service it might get closed down at any point.
+
+http://192.168.2.9:9000/
+
+set up the path to the music and your playlist.
+Install any add-ins you wish to include, the material skin is a good interface to LMS and most people feel makes it better. 
+
+script this
+copy setting.json
+
+
+
+
+script some of this
+install get_iplayer (try it as a script)
+
+copy the files back into place
+
+set up cron
+
+script/document this
+Look at sorting out the web pages
+

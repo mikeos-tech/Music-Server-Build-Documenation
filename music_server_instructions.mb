@@ -6,18 +6,17 @@ sudo dd bs=4M if=ubuntu-21.04-live-server-amd64.iso of=/dev/sdb status=progress
 write it to a USB stick and boot from it.
 carry out the install, just including the standard elements though including openssh
 
-after the reboot
-
+After the reboot
 
 If you have an ssh key that you use to login, set it up
 ssh-copy-id mike@192.168.2.9
 
-Acceses the server using ssh
+Access the server using ssh
 ssh mike@192.168.2.9
 
 sudo apt update && sudo apt Upgrade
 
-run the software install script
+Run the software install script
 This script has a line in it near the top that sets the time zone to Europe/London, this will need to be modified if it isn't what you require
     sudo timedatectl set-timezone Europe/London
 To look for alternative timezones use the command below
@@ -25,7 +24,7 @@ To look for alternative timezones use the command below
     
 transmission didn't install
 
-run the user tools script
+Run the user tools script
 
 I copied across my configuration files
 

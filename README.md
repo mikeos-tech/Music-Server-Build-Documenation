@@ -1,7 +1,7 @@
-# Music Server Build/Configuration Documenation 
+# Music Server Build/Configuration Documentation 
 These documents describe how to install and configure the various elements of the server.
 
-These documents describe the way I chose to carry out the install, my preferences.  What is suggested may not suit your requirements and should be treated as a suggestion or guide, though some elements may have depenancies on or for other elements of the build.
+These documents describe the way I chose to carry out the install, my preferences.  What is suggested may not suit your requirements and should be treated as a suggestion or guide, though some elements may have dependencies on or for other elements of the build.
 
 This is part of what will be a bigger project - building a Music/Media Server.
 
@@ -34,7 +34,7 @@ I'm not claiming any expertise or that how I do this will be the only, or the be
 
 I am hoping that you will be inspired to experiment and to learn, what would you like to have your server do?
 
-As part of this I'm using and learning tools like *vim*, *tmux*, *ssh*, *git* and github.  I've been using Linux for a long time but have been working mainly within the KDE desktop GUI recently, I'm enjoying getting back to the command line and learning a lot.
+As part of this I'm using and learning tools like *vim*, *tmux*, *ssh*, *git* and GitHub.  I've been using Linux for a long time but have been working mainly within the KDE desktop GUI recently, I'm enjoying getting back to the command line and learning a lot.
 
 Mike
 

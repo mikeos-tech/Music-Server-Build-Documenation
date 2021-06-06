@@ -1,4 +1,10 @@
+# Installing and Configuring the dnsmasq Server
+
+dnsmasq (DNS masquerade) is Open Source software that provides Domain Name System (DNS) caching, a Dynamic Host Configuration Protocol (DHCP) server, router advertisement and network boot features, intended for small computer networks.
+
 I wanted to install a *DNS* server to provide easy, named access to the web pages and the files shares.  The *Samba* configuration also works to facilitate this. 
+
+I left my Router providing the *DHCP* for my network.
 
 I made the *DNS* available on my network by setting it up as the primary *DNS* server within my routers **LAN** settings, I had the option of setting two others which I set as the two *OpenDNS* servers.
 
@@ -12,7 +18,7 @@ Once the service is disabled, you need to remove its default configuration file.
 
 create a new *resolve.conf* file with the ip address of an external DNS server.
 
-nameserver 208.67.220.220
+      nameserver 208.67.220.220
 
 I chose to use one of the *OpenDNS* servers I have included a list of available *DNS* servers below:
 
@@ -90,7 +96,7 @@ Edit the /etc/hosts
 
 Add a line to it pointing to your DNS server, below is what I added to mine.
 
-192.168.2.9␣musicmachine.musicwoorld.com
+      192.168.2.9␣musicmachine.musicwoorld.com
 
 ## Test the *DNS*
 
@@ -102,10 +108,10 @@ Which should return the servers IP address.
 
       dig google.com +short
 
-Which should return and external IP address.
+Which should return an external IP address.
 
 Add the following files to your configuration backup:
 
 * /etc/dnsmasq.conf
 * /etc/hosts
-* /etc/resolv.conf␣
+* /etc/resolv.conf

@@ -20,7 +20,7 @@ create a new *resolve.conf* file with the ip address of an external DNS server.
 
       nameserver 208.67.220.220
 
-I chose to use one of the *OpenDNS* servers I have included a list of available *DNS* servers below:
+I chose to use one of the *OpenDNS* servers, I have included a list of available *DNS* servers below:
 
 * 1.1.1.1 - Cloudflare
 * 1.0.0.1 - Cloudflare
